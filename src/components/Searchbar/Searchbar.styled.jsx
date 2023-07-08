@@ -78,3 +78,5 @@ export const SearchbarStyled = styled.header`
     border: 0;
   }
 `;
+
+ 

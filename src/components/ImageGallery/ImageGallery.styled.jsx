@@ -13,3 +13,4 @@ export const ImageGalleryStyled = styled.ul`
     margin-right: auto;
   `;
 
+

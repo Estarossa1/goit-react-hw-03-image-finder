@@ -9,11 +9,11 @@ export default class Searchbar extends Component {
     query: '',
   };
 
-  handleCange = event => {
-    this.setState({ query: event.curentTurget.value.toLowerCase() });
+  handleChange = event => {
+    this.setState({ query: event.currentTarget.value.toLowerCase() });
   };
 
-  hendleSubmit = event => {
+  handleSubmit = event => {
     event.preventDefault();
     if (this.state.query.trim() === '') {
       toast.error('Please input tag for searching images');
@@ -46,6 +46,6 @@ export default class Searchbar extends Component {
   }
 }
 
-Searchbar.PropTypes = {
+Searchbar.propTypes = {
   onSubmit: PropTypes.func.isRequired,
 };

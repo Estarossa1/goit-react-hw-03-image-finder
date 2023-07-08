@@ -1,5 +1,5 @@
-import LoaderStyled from './Loader.stiled'
-import { Puff } from 'react-loader-spiner'
+import LoaderStyled from './Loader.styled';
+import { Puff } from 'react-loader-spinner';
 
 const Loader = () => (
   <LoaderStyled>
@@ -14,6 +14,6 @@ const Loader = () => (
       visible={true}
     />
   </LoaderStyled>
-);  
+);
 
 export default Loader;

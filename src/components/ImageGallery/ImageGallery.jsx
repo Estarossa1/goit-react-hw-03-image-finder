@@ -6,9 +6,9 @@ import { ImageGalleryStyled } from './ImageGallery.styled';
 class ImageGallery extends Component {
   galleryRef = React.createRef();
 
-  scrollToNewItem() {
+  scrollToNewItems() {
     if (this.galleryRef && this.galleryRef.current) {
-      this.galleryRef.current.scrollToNewItem({
+      this.galleryRef.current.scrollIntoView({
         behavior: 'smooth',
         block: 'start',
       });
@@ -19,7 +19,7 @@ class ImageGallery extends Component {
     }
   }
 
-  render () {
+  render() {
     const { images, onOpenModal } = this.props;
 
     return (
@@ -39,8 +39,12 @@ class ImageGallery extends Component {
 }
 
 ImageGallery.propTypes = {
-  image: PropTypes.arrayOf(PropTypes.object.isRequired).isRequired,
+  images: PropTypes.arrayOf(PropTypes.object.isRequired).isRequired,
   onOpenModal: PropTypes.func.isRequired,
 };
 
 export default ImageGallery;
+
+// <ul class="gallery">
+//   <!-- Набір <li> із зображеннями -->
+// </ul>
