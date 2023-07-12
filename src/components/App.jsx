@@ -44,7 +44,7 @@ class App extends Component {
           } else {
             const totalCount = this.state.images.length;
             this.notify('Loaded first images.', totalCount + images.length);
-
+            
           }
           this.setState({ images });
         } catch (error) {
